@@ -1,0 +1,38 @@
+<div class="batter-container">
+    <h2 style="color: #000000;">🔥 현대 야구 타격 이론 & 데이터 분석</h2>
+    <p>스탯캐스트 시대의 타격 지표(발사각, 타구속도)와 스윙 궤적을 분석합니다.</p>
+
+    <div class="form-selector batter-selector">
+        <button class="active" onclick="updateBatter('swingPlane')">스윙 궤적 (Swing Plane)</button>
+        <button onclick="updateBatter('launchAngle')">발사각 & 타구속도 (Barrel)</button>
+        <button onclick="updateBatter('sprayChart')">핫콜드존 & 스프레이 차트</button>
+    </div>
+
+    <div class="grid-layout">
+        
+        <div class="visual-card">
+            <h3 id="batter-visual-title">스윙 궤적과 투구 궤적의 교차점</h3>
+            <img id="batter-img" src="assets/images/swing_plane.jpg" alt="타자 시각화 자료">
+            
+        </div>
+
+        <div class="data-card">
+            <h3 id="batter-title">레벨 스윙 vs 어퍼 스윙</h3>
+            <ul class="data-list">
+                <li>
+                    <strong style="color: #e74c3c;">핵심 원리:</strong> 
+                    <span id="batter-principle">투수의 공은 마운드에서 홈플레이트로 하향(약 6~10도)하며 떨어집니다. 이에 맞춰 배트를 살짝 올려치는(어퍼) 궤적이 공과 배트가 만나는 면적을 극대화합니다.</span>
+                </li>
+                <li>
+                    <strong style="color: #e74c3c;">주요 데이터:</strong> 
+                    <span id="batter-data">현대 야구에서는 배트가 10~15도 상향하는 어퍼 스윙이 장타율을 높이는 가장 이상적인 궤적으로 증명되었습니다.</span>
+                </li>
+                <li>
+                    <strong style="color: #e74c3c;">전술적 활용:</strong> 
+                    <span id="batter-tactics">과거의 정석이었던 '다운 스윙'은 컨택에는 유리할지 몰라도 땅볼 타구를 양산하므로, 현대 데이터 야구에서는 지양하는 추세입니다.</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
