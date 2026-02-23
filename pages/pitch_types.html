@@ -1,0 +1,45 @@
+<div class="pitch-types-container">
+    <h2>⚾ 구종(Pitch Types) 상세 분석</h2>
+    <p>각 구종의 그립법과 타자 시점에서의 궤적 변화를 확인하세요.</p>
+
+    <div class="pitch-selector">
+        <button class="active" onclick="updatePitchType('fourSeam')">포심 패스트볼</button>
+        <button onclick="updatePitchType('slider')">슬라이더</button>
+        <button onclick="updatePitchType('curveball')">커브</button>
+        <button onclick="updatePitchType('changeup')">체인지업</button>
+    </div>
+
+    <div class="pitch-grid-layout">
+        
+        <div class="pitch-card visual-card">
+            <h3>그립 (Grip)</h3>
+            <img id="grip-img" src="assets/images/fourseam_grip.jpg" alt="구종 그립">
+            [Image of four-seam fastball baseball grip]
+        </div>
+
+        <div class="pitch-card visual-card">
+            <h3>투구 궤적 (Trajectory)</h3>
+            <img id="trajectory-gif" src="assets/animations/fourseam_traj.gif" alt="구종 궤적">
+            [Image of four-seam fastball pitch trajectory diagram showing backspin and straight flight]
+        </div>
+
+        <div class="pitch-card data-card">
+            <h3 id="pitch-name">포심 패스트볼 (Four-seam Fastball)</h3>
+            <ul class="pitch-data-list">
+                <li>
+                    <strong>주요 특징:</strong> 
+                    <span id="pitch-desc">가장 기본적이고 빠른 공. 강력한 백스핀이 걸려 공이 덜 떨어지며 홈플레이트를 통과합니다.</span>
+                </li>
+                <li>
+                    <strong>무브먼트:</strong> 
+                    <span id="pitch-movement">상하 무브먼트가 커서 타자 입장에서는 공이 떠오르는 듯한 '라이징' 착각을 일으킵니다.</span>
+                </li>
+                <li>
+                    <strong>구사 목적:</strong> 
+                    <span id="pitch-purpose">카운트를 잡거나, 타자의 배트 스피드를 이겨내기 위한 결정구로 사용.</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

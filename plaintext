@@ -1,0 +1,20 @@
+baseball_project/
+├── index.html          # [중앙 제어] 네비게이션 바 및 페이지 로더
+├── css/
+│   └── style.css       # [디자인] 레이아웃, 카드 스타일, 야구 테마 폰트/색상
+├── js/
+│   ├── main.js         # [핵심 로직] 메뉴 클릭 시 페이지 전환(Fetch API)
+│   ├── pitcher.js      # [투수 모듈] 구종 선택 시 이미지/GIF 교체 로직
+│   └── batter.js       # [타자 모듈] (추후 구현 예정)
+├── pages/              # [콘텐츠] 실제 화면에 보일 부분 HTML
+│   ├── pitcher.html    
+│   └── batter.html     
+└── assets/             # [리소스]
+    ├── images/         # 구종별 그립 (jpg)
+    └── animations/     # 투구 궤적 (gif)
+
+    카테고리	세부 항목	시각화 방식
+투구 메커니즘	오버핸드~언더핸드 폼	팔 각도 일러스트 및 릴리스 포인트 비교
+구종 상세	포심, 슬라이더, 커브 등	그립(JPG) + 궤적(GIF) 교차 배치
+물리 데이터	회전수(Spin Rate), 무브먼트	좌표 평면(Movement Map) 시각화
+전략 요소	좌/우투 이점, 피치 터널링	타자 시점(POV) 이미지 및 궤적 겹쳐보기

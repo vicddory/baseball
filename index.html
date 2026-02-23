@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚾ BaseViz | 야구 시각화 리포트</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h1>⚾ BaseViz</h1>
+                <p>Baseball Analytics</p>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="menu-title">투수 리포트<br>Pitcher</li>
+                <li class="nav-item active" onclick="loadPage('mechanism')">투구 메커니즘<br>Pitching Mechanism</li>
+                <li class="nav-item" onclick="loadPage('pitch_types')">구종 분석<br>Type of Pitch</li>
+                <li class="nav-item" onclick="loadPage('platoon')">좌/우투 이점<br>Advantage of Each Hand</li>
+                
+                <li class="menu-title" style="margin-top: 30px;">타자 리포트<br>Hitter</li>
+                <li class="nav-item" onclick="loadPage('batter')">타격 데이터 (준비중)</li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h2>데이터로 보는 야구</h2>
+            </header>
+            
+            <div id="content-area">
+                <div class="welcome-message">
+                    <h2>환영합니다!</h2>
+                    <p>좌측 메뉴를 선택하여 시각화 데이터를 확인하세요.</p>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

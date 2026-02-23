@@ -1,0 +1,41 @@
+<div class="mechanism-container">
+    <h2>⚾ 투구 메커니즘 분석</h2>
+    <p>투구 폼에 따른 팔 각도와 릴리스 포인트의 차이를 확인하세요.</p>
+
+    <div class="form-selector">
+        <button class="active" onclick="updateMechanism('overhand')">오버핸드</button>
+        <button onclick="updateMechanism('threeQuarter')">스리쿼터</button>
+        <button onclick="updateMechanism('sidearm')">사이드암</button>
+        <button onclick="updateMechanism('underhand')">언더핸드</button>
+    </div>
+
+    <div class="grid-layout">
+        <div class="visual-card">
+            <h3 id="form-name">오버핸드 (Overhand)</h3>
+            <img id="form-gif" src="assets/animations/overhand_form.gif" alt="투구 폼 애니메이션">
+            [Image of pitching arm angles diagram comparing overhand, three-quarter, sidearm, and underhand deliveries]
+        </div>
+
+        <div class="data-card">
+            <h3>메커니즘 특성</h3>
+            <ul class="data-list">
+                <li>
+                    <strong>팔 각도 (Arm Angle):</strong> 
+                    <span id="arm-angle">지면 기준 70~90도</span>
+                </li>
+                <li>
+                    <strong>릴리스 포인트 (Release Point):</strong> 
+                    <span id="release-point">매우 높음. 타자 시야의 가장 높은 곳에서 공이 나옴.</span>
+                </li>
+                <li>
+                    <strong>장점:</strong> 
+                    <span id="form-pros">수직 무브먼트(상하 낙폭)를 극대화하기 좋으며, 커브나 포크볼 구사에 유리함.</span>
+                </li>
+                <li>
+                    <strong>단점:</strong> 
+                    <span id="form-cons">어깨와 팔꿈치에 걸리는 부하가 커 부상 위험이 상대적으로 높음.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

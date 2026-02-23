@@ -1,0 +1,38 @@
+<div class="platoon-container">
+    <h2>⚾ 좌투수 vs 우투수: 전략적 이점</h2>
+    <p>투구하는 손의 위치가 타자의 시야와 경기 전략에 미치는 영향을 분석합니다.</p>
+
+    <div class="platoon-selector">
+        <button class="active" onclick="updatePlatoon('lefty')">좌투수 (LHP) 이점</button>
+        <button onclick="updatePlatoon('righty')">우투수 (RHP) 이점</button>
+        <button onclick="updatePlatoon('platoonEffect')">플래툰 효과 (상성)</button>
+    </div>
+
+    <div class="platoon-grid-layout">
+        
+        <div class="platoon-card visual-card">
+            <h3 id="platoon-visual-title">좌투수의 릴리스 앵글</h3>
+            <img id="platoon-img" src="assets/images/lefty_angle.jpg" alt="투구 각도 다이어그램">
+            
+        </div>
+
+        <div class="platoon-card data-card">
+            <h3 id="platoon-title">좌투수의 희귀성과 각도의 마법</h3>
+            <ul class="platoon-data-list">
+                <li>
+                    <strong>핵심 원리:</strong> 
+                    <span id="platoon-principle">우타자 위주의 야구 생태계에서 좌투수는 1루 견제가 쉽고, 좌타자의 등 뒤에서 공이 날아오는 듯한 착시를 줍니다.</span>
+                </li>
+                <li>
+                    <strong>시각적 효과 (POV):</strong> 
+                    <span id="platoon-pov">좌타자 입장에서는 공이 자신의 몸을 향해 날아오다 바깥쪽으로 흘러나가는 궤적으로 보여 두려움을 느낍니다.</span>
+                </li>
+                <li>
+                    <strong>전략적 가치:</strong> 
+                    <span id="platoon-value">리그에 좌투수 자체가 적기 때문에 타자들이 좌투수의 공 궤적에 익숙해질 기회가 상대적으로 적습니다.</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
